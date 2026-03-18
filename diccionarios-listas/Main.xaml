@@ -92,13 +92,13 @@
       <AssemblyReference>UiPath.Platform</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="892.0000000000001,1159.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="892.0000000000001,1281.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap:VirtualizedContainerService.HintSize="467.2,1136" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence sap:VirtualizedContainerService.HintSize="467.2,1258.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <Sequence.Variables>
         <Variable x:TypeArguments="scg:Dictionary(x:String, scg:List(x:String))" Name="Cities" />
       </Sequence.Variables>
@@ -141,7 +141,8 @@
         </uasc:AppendItemToCollection.Items>
       </uasc:AppendItemToCollection>
       <uasc:RemoveFromCollection x:TypeArguments="x:String" Index="{x:Null}" Collection="[Cities(&quot;UK&quot;)]" DisplayName="Remove From Collection" sap:VirtualizedContainerService.HintSize="433.6,251.2" sap2010:WorkflowViewState.IdRef="RemoveFromCollection`1_1" Item="London" RemoveAllElements="False" Result="[Cities(&quot;UK&quot;)]" />
-      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="433.6,165.6" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;US Cities: &quot; + String.Join(&quot;, &quot; , Cities(&quot;US&quot;)) + vbLf + &quot;and&quot; + vbLf + String.Join(&quot;, &quot; , Cities(&quot;UK&quot;))]" />
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="433.6,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;US Cities: &quot; + String.Join(&quot;, &quot; , Cities(&quot;US&quot;)) + vbLf + &quot;and&quot; + vbLf + String.Join(&quot;, &quot; , Cities(&quot;UK&quot;))]" />
+      <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;US Cities: &quot; + String.Join(&quot;, &quot; , Cities(&quot;US&quot;)) + vbLf + &quot;and&quot; + vbLf + String.Join(&quot;, &quot; , Cities(&quot;UK&quot;))]" />
     </Sequence>
   </Sequence>
 </Activity>
